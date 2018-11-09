@@ -13,6 +13,14 @@
     "extender",
     "extention"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eclipticrick/prototype-extender.git"
+  },
   "author": "Wesley Veenendaal",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eclipticrick/prototype-extender/issues"
+  },
+  "homepage": "https://github.com/eclipticrick/prototype-extender#readme"
 }
