@@ -1,0 +1,6 @@
+# IntelliJ Editor
+.idea/*
+*.iml
+
+# NodeJS
+node_modules/*

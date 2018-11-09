@@ -1,0 +1,18 @@
+{
+  "name": "prototype-extender",
+  "version": "0.0.1",
+  "description": "An extender for the default prototype methods and properties that javascript provides",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "prototype",
+    "extender",
+    "extention"
+  ],
+  "author": "Wesley Veenendaal",
+  "license": "ISC"
+}
