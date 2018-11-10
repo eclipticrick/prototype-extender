@@ -1,18 +1,18 @@
-module.exports = (config, extentions) => {
+module.exports = (objectType, config = {}, extentions) => {
     if (config['include'] && config['exclude']) {
         throw new Error('Add Extended Prototyped can only receive include or exclude, but not both.')
     }
     if (config['include']) {
         config['include'].forEach(extentionName => {
-            String.prototype[extentionName] = extentions[extentionName];
+            objectType.prototype[extentionName] = extentions[extentionName];
         });
     } else if (config['exclude']) {
         Object.keys(extentions).filter(x => config['exclude'].indexOf(x) !== -1).forEach(extentionName => {
-            String.prototype[extentionName] = extentions[extentionName];
+            objectType.prototype[extentionName] = extentions[extentionName];
         })
     } else {
         Object.keys(extentions).forEach(extentionName => {
-            String.prototype[extentionName] = extentions[extentionName];
+            objectType.prototype[extentionName] = extentions[extentionName];
         })
     }
 };
